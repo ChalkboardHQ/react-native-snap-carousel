@@ -13,11 +13,11 @@ export default class PaginationDot extends PureComponent {
         activeOpacity: PropTypes.number,
         carouselRef: PropTypes.object,
         color: PropTypes.string,
-        containerStyle: View.propTypes.style,
+        containerStyle: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
         inactiveColor: PropTypes.string,
-        inactiveStyle: View.propTypes.style,
+        inactiveStyle: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
         index: PropTypes.number,
-        style: View.propTypes.style,
+        style: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
         tappable: PropTypes.bool
     };
 
